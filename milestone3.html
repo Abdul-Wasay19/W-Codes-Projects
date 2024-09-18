@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="styling3.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="main_nav container flex">
+            <a href="#">
+                <img src="default.png" alt="">
+            </a>
+            <div class="nav_links">
+                <ul class="list">
+                    <li class="item hover" id="item1" onclick="onNavClick('Finance')">Finance</li>
+                    <li class="item hover" id="item2" onclick="onNavClick('Pakistan Super League')">PSL</li>
+                    <li class="item hover" id="item3" onclick="onNavClick('Politics')">Politics</li>
+                    <li class="item hover" id="item4" onclick="onNavClick('Technology')">Technology</li>
+                </ul>
+            </div>
+            <div class="search_bar">
+                <input type="text" class="news input" id="search_text" placeholder="e.g science">
+                <button class="search_button" id="search_button1">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main_container">
+        <div class="cards_container container flex" id="cards_container">
+        </div>
+    </main>
+
+    <template id="template-news1">
+        <div class="card">
+            <div class="card_header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" class="news-image" id="news-img">
+            </div>
+            <div class="card_content">
+                <h3 class="Title" id="Title1">This is the title</h3>
+                <h6 class="source" id="source1">End Gadget 26/08/2023</h6>
+                <p class="news_desc" id="news_desc1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quaerat blanditiis ex
+                    quisquam eius maxime nemo?</p>
+            </div>
+        </div>
+    </template>
+    <script src="script6.js"></script>
+</body>
+
+</html>
